@@ -38,7 +38,6 @@ public class C01_NestedMaps {
         ) {
             System.out.println(each);
         }
-        // 102 nolu kisinin ismini yazdiralim
         System.out.println(ogrenciNestedMap.get(102).get("isim"));
 
     }
