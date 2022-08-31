@@ -78,7 +78,7 @@ public class Fp03 {
     //4) Elemanları son karakterlerine göre sıralayıp tekrarsız yazdıran bir method oluşturun.
     public static void sonKaraktereGoreTekrarsizYazdir(List<String> list){
 
-        list.stream().distinct().sorted(Comparator.comparing(Utils::sonKarekteriAl)).forEach(Utils::ayniSatirdaBosluklaYazdir);
+        list.stream().distinct().sorted(Comparator.comparing(Utils::sonKarakteriAl)).forEach(Utils::ayniSatirdaBosluklaYazdir);
     }
 
     //5) Elemanları önce uzunluklarına göre ve sonra ilk karakterine göre sıralayıp yazdıran bir method oluşturun.
@@ -86,7 +86,7 @@ public class Fp03 {
 
         list.
                 stream().
-                sorted(Comparator.comparing(String::length).thenComparing(Utils::ilkKarekteriAl)).//thenComparing() :==>siralama icin bir kosul daha belirtir
+                sorted(Comparator.comparing(String::length).thenComparing(Utils::ilkKarakteriAl)).//thenComparing() :==>siralama icin bir kosul daha belirtir
                 forEach(Utils::ayniSatirdaBosluklaYazdir);
 
     }
